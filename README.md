@@ -2,11 +2,18 @@
 
 ##  Selected Hackathon Track: Digital Empowerment
 
-Welcome to RydePick, a dedicated web-application for commuters who have but the liberty of time in exchange for comfortable rides. By integrating various APIs, the user-friendly web application empowers users to tailor their routes based on preferred comfort levels.  Commuters can now customize their travel experience based on their selected comfort options. Through intuitive interface design and seamless API integration, this innovative solution not only simplifies route planning but also fosters a more comfortable and enjoyable commuting experience for users, ultimately improving overall satisfaction and efficiency in public transportation usage.
+## Challenge Statement: [hacksingapore] Create a solution to enhance commuter experiences.
+
+Welcome to RydePick, a dedicated web-application for commuters who have but the liberty of time in exchange for comfortable rides. Our application sources data from various APIs to provide real-time data that allows users to prioritise comfort rather than speed. As opposed to many maps that aim to optimise route timings, our application is designed to allow people, especially youngsters and elderly, who have the liberty of time to opt for more spacious rides. In addition, we boost user commuting experiences by bringing offers with collaborating outlets to users who happen to pass them on their commute.
 
 ##  List of tech stack: 
-  1. [Onemap API](https://www.onemap.gov.sg/apidocs/)
-  2. [DataMall API](https://datamall.lta.gov.sg/content/datamall/en.html)
+  1. Front-end: HTML, CSS, JavaScript
+  2. Webframe: Django
+  3. Backend: Python
+  4. APIs: OneMap API, DataMall API
+
+
+
   
   
   
