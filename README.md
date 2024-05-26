@@ -6,6 +6,7 @@ Welcome to RydePick, a dedicated web-application for commuters who have but the 
 
 ## <u> List of tech stack: </u>
   <u>1. Onemap API  </u>
+  
   <u>2 DataMall API </u>
   
 
