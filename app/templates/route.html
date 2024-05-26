@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="RydePick">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../../assets/css/jquery.scrollbar.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <title>RydePick - Smarter Travel for All</title>
+    <style>
+        .crowd-dot {
+            font-size: 24px;
+        }
+        #featured-routes {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 10px;
+            background: none; /* Remove background */
+        }
+        .card {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="ts-page-wrapper ts-homepage" id="page-top">
+    <main id="ts-main">
+        <section id="featured-routes" class="ts-block pt-2" style="display:none;">
+            <div class="container">
+                <div class="row">
+                    <!--Item-->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card ts-item ts-card ts-item__lg">
+                            <!--Card Body-->
+                            <div class="card-body">
+                                <h4>Route 1{{time1}}</h4>
+                                <div class="ts-description-lists">
+                                    <dl>
+                                        <dt>Crowd Level</dt>
+                                        <dd>
+                                            <span class="crowd-dot" style="color: green;">●</span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <!--Card Footer-->
+                            <a href="route-detail-01.html" class="card-footer">
+                                <span class="ts-btn-arrow">Detail</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end Item-->
+
+                    <!--Item-->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card ts-item ts-card ts-item__lg">
+                            <!--Card Body-->
+                            <div class="card-body">
+                                <h4>Route 2{{time2}}</h4>
+                                <div class="ts-description-lists">
+                                    <dl>
+                                        <dt>Crowd Level</dt>
+                                        <dd>
+                                            <span class="crowd-dot" style="color: orange;">●●●</span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <!--Card Footer-->
+                            <a href="route-detail-02.html" class="card-footer">
+                                <span class="ts-btn-arrow">Detail</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end Item-->
+
+                    <!--Item-->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card ts-item ts-card ts-item__lg">
+                            <!--Card Body-->
+                            <div class="card-body">
+                                <h4>Route 3{{time3}}</h4>
+                                <div class="ts-description-lists">
+                                    <dl>
+                                        <dt>Crowd Level</dt>
+                                        <dd>
+                                            <span class="crowd-dot" style="color: red;">●●●●●</span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <!--Card Footer-->
+                            <a href="route-detail-03.html" class="card-footer">
+                                <span class="ts-btn-arrow">Detail</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end Item-->
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="/assets/js/jquery-3.3.1.min.js"></script>
+<script src="../../static/assets/js/popper.min.js"></script>
+<script src="../../static/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://maps.google.com/maps/api/js"></script>
+<script src="../../static/assets/js/richmarker-compiled.js"></script>
+<script src="../../static/assets/js/markerclusterer_packed.js"></script>
+<script src="../../static/assets/js/infobox.js"></script>
+<script src="../../static/assets/js/owl.carousel.min.js"></script>
+<script src="../../static/assets/js/sly.min.js"></script>
+<script src="../../static/assets/js/dragscroll.js"></script>
+<script src="../../static/assets/js/jquery.scrollbar.min.js"></script>
+<script src="../../static/assets/js/custom.js"></script>
+<script src="../../static/assets/js/map-google.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#collapse-button').click(function() {
+            $('.ts-form-collapse').collapse('toggle');
+            $('#collapse-arrow').toggleClass('collapsed');
+        });
+
+        $('#search-form').submit(function(event) {
+            event.preventDefault();
+            $('#featured-routes').show();
+        });
+    });
+</script>
+</body>
+</html>

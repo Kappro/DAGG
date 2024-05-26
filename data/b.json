@@ -1,0 +1,13 @@
+{
+    "trip_in_progress": true,
+    "completed_legs": null,
+    "current_leg": null,
+    "dest_coords": [
+        "1.30005342428219",
+        "103.788202474431"
+    ],
+    "current_coords": [
+        "1.39202430708237",
+        "103.896214703952"
+    ]
+}
